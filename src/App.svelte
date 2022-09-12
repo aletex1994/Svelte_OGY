@@ -1,18 +1,20 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
+  import linkedinLogo from './assets/linkedin.svg'
+  import githubLogo from './assets/github.svg' 
   import Counter from './lib/Counter.svelte'
+  import Topbar from './lib/Topbar.svelte';
 </script>
-
-<main>
+<Topbar/>
+<main class="card main-content">
   <div>
-    <a href="https://vitejs.dev" target="_blank"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
+    <a href="https://www.linkedin.com/in/alessandro-tezza-5201a721a/" target="_blank"> 
+      <img src={linkedinLogo} class="logo" alt="Linkedin Logo" />
     </a>
-    <a href="https://svelte.dev" target="_blank"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
+    <a href="https://github.com/aletex1994" target="_blank"> 
+      <img src={githubLogo} class="logo" alt="Git Logo" />
     </a>
   </div>
-  <h1>Vite + Svelte</h1>
+  <h1>Alessandro Tezza</h1>
 
   <div class="card">
     <Counter />
@@ -29,17 +31,14 @@
 
 <style>
   .logo {
-    height: 6em;
+    height: 3em;
     padding: 1.5em;
     will-change: filter;
   }
   .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
+    filter: drop-shadow(0 0 2em #000);
   }
   .read-the-docs {
-    color: #888;
+    color: rgb(186, 186, 186);
   }
 </style>

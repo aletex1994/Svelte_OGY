@@ -1,32 +1,43 @@
 <script lang="ts">
-  import linkedinLogo from './assets/linkedin.svg'
-  import githubLogo from './assets/github.svg' 
-  import Counter from './lib/Counter.svelte'
-  import Topbar from './lib/Topbar.svelte';
+  import linkedinLogo from "./assets/linkedin.svg";
+  import githubLogo from "./assets/github.svg";
+  import Counter from "./lib/Counter.svelte";
+  import Topbar from "./lib/Topbar.svelte";
+
+  let whoami =
+    "I'm a Fullstack Developer from Italy, currently working for <a href='https://www.origyn.com/' target='_blank'>Origyn Foundation</a>";
 </script>
-<Topbar/>
+
+<Topbar />
 <main class="card main-content">
   <div>
-    <a href="https://www.linkedin.com/in/alessandro-tezza-5201a721a/" target="_blank"> 
+    <a
+      href="https://www.linkedin.com/in/alessandro-tezza-5201a721a/"
+      target="_blank"
+    >
       <img src={linkedinLogo} class="logo" alt="Linkedin Logo" />
     </a>
-    <a href="https://github.com/aletex1994" target="_blank"> 
+    <a href="https://github.com/aletex1994" target="_blank">
       <img src={githubLogo} class="logo" alt="Git Logo" />
     </a>
   </div>
   <h1>Alessandro Tezza</h1>
+
+  <p>
+    {@html whoami}
+  </p>
 
   <div class="card">
     <Counter />
   </div>
 
   <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank">SvelteKit</a>, the official Svelte app framework powered by Vite!
+    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank"
+      >SvelteKit</a
+    >, the official Svelte app framework powered by Vite!
   </p>
 
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <p class="read-the-docs">Click on the Vite and Svelte logos to learn more</p>
 </main>
 
 <style>
@@ -36,7 +47,7 @@
     will-change: filter;
   }
   .logo:hover {
-    filter: drop-shadow(0 0 2em #000);
+    filter: drop-shadow(0 0 2em #fff);
   }
   .read-the-docs {
     color: rgb(186, 186, 186);

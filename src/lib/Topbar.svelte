@@ -54,7 +54,7 @@
       country: "Africa",
       city: "Johannesburg",
       time: "",
-      flag: "🇿🇦",
+      flag: "🇿🇦",  
     },
     {
       country: "America/Argentina",
@@ -96,7 +96,7 @@
   {#await promise}
     <h4 class="font-bold">...LOADING</h4>
   {:then}
-    <h4 class="font-bold">
+    <h4 class="font-bold timezones">
       <Marquee pauseOnHover={true} speed={120}>
         {#each timezones as timezone}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{timezone.flag}
@@ -109,3 +109,10 @@
     <p style="color: red">{error.message}</p>
   {/await}
 </nav>
+
+<style>
+  .timezones{
+    font-size: 12px;
+    margin:0!important;
+  }
+</style>

@@ -1,9 +1,8 @@
 <script lang="ts">
   import linkedinLogo from "./assets/linkedin.svg";
   import githubLogo from "./assets/github.svg";
-  import Counter from "./lib/Counter.svelte";
   import Topbar from "./lib/Topbar.svelte";
-
+  import Footer from "./lib/Footer.svelte";
   let whoami =
     "I'm a Fullstack Developer from Italy, currently working for <a href='https://www.origyn.com/' target='_blank'>Origyn Foundation</a>";
 </script>
@@ -26,20 +25,8 @@
   <p>
     {@html whoami}
   </p>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank"
-      >SvelteKit</a
-    >, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">Click on the Vite and Svelte logos to learn more</p>
 </main>
-
+<Footer/>
 <style>
   .logo {
     height: 3em;
@@ -48,8 +35,5 @@
   }
   .logo:hover {
     filter: drop-shadow(0 0 2em #fff);
-  }
-  .read-the-docs {
-    color: rgb(186, 186, 186);
   }
 </style>

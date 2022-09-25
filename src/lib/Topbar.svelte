@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import Marquee from "svelte-fast-marquee";
+
   let timezones = [
     {
       country: "Europe",
@@ -72,6 +73,7 @@
     const time = data.datetime;
     return time.split("T")[1].split(".")[0];
   }
+  
   async function updateTime() {
     let x: any;
     for (x in timezones) {
@@ -97,6 +99,7 @@
     <h4 class="font-bold">...LOADING</h4>
   {:then}
     <h4 class="font-bold timezones">
+      {#if screen.width > 768}
       <Marquee pauseOnHover={true} speed={120}>
         {#each timezones as timezone}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{timezone.flag}
@@ -104,6 +107,15 @@
           {timezone.time}
         {/each}
       </Marquee>
+      {:else}
+      <Marquee pauseOnHover={true} speed={60}>
+        {#each timezones as timezone}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{timezone.flag}
+          {timezone.city}
+          {timezone.time}
+        {/each}
+      </Marquee>
+      {/if}
     </h4>
   {:catch error}
     <p style="color: red">{error.message}</p>

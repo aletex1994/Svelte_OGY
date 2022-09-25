@@ -26,7 +26,7 @@
   <p>
     {@html whoami}
   </p>
-  <p>
+  <p class="small-text">
     {@html whatido}
   </p>
 </main>
@@ -39,5 +39,8 @@
   }
   .logo:hover {
     filter: drop-shadow(0 0 2em #fff);
+  }
+  .small-text{
+    font-size: 0.8em;
   }
 </style>

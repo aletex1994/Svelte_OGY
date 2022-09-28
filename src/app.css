@@ -79,3 +79,74 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.snackContainer .snackbar {
+    margin-top: 24px;
+    width: fit-content;
+    max-width: 404px;
+    padding: 12px 16px 16px 12px;
+    background-color: #151515;
+    box-shadow: 0px 1px 12px rgba(18, 18, 18, 0.04),
+      0px 0px 4px rgba(18, 18, 18, 0.08);
+    border-radius: 8px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.15px;
+    color: #fefefe;
+  }
+  .snackContainer .svg {
+    fill: #fff;
+    width: 15px;
+    height: 15px;
+    viewbox: 0 0 15 15;
+  }
+  .snackContainer .svgBox {
+    margin-right: 1px;
+    padding-top: 2px;
+  }
+  .snackContainer .container {
+    display: flex;
+  }
+  .snackContainer .container-block {
+    display: block;
+    text-align: justify;
+  }
+
+  .snackContainer .button {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #fefefe;
+    padding: 0px;
+    margin-left: 28px;
+    padding-top: 2px;
+  }
+  .snackContainer .button:hover {
+    background-color: #151515;
+  }
+  .snackContainer .button-right {
+    margin-right: 0px;
+    margin-left: auto;
+    margin-top: 14px;
+  }
+  .snackContainer a {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #fff;
+  }
+  .snackContainer a:hover {
+    text-decoration: none;
+  }
+  .snackContainer p {
+    line-height: 22px;
+    text-align: justify;
+  }

@@ -1,9 +1,8 @@
 <script>
 	import { getContext } from 'svelte';
-
-	let name = getContext('name');
-
+	let isOpen= getContext('isOpen');
 </script>
+	
 <div>
-	<p>SNACKBAR {$name}</p>
+	<p>SNACKBAR {$isOpen}</p>
 </div>

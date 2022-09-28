@@ -1,16 +1,16 @@
 <script lang="ts" context="module">
-  import type { SnackBarProps } from "./SnackProvider.svelte";
+  import type { SnackBarProps } from "./Types.svelte";
   export const Layouts = {
-    oneLine: function (props: SnackBarProps) {
-      return `<div className="snackbar">${props.message}</div>`;
+    'oneLine': function (props: SnackBarProps) {
+      return `<div class="snackbar">${props.message}</div>`;
     },
     twoLine: function (props: SnackBarProps) {
-      return `<div className="snackbar">${props.message}</div>`;
+      return `<div class="snackbar">${props.message}</div>`;
     },
     oneLineIcon: function (props: SnackBarProps) {
-      return ` <div className="snackbar">
-        <div className="container">
-          <div className="svgBox">
+      return ` <div class="snackbar">
+        <div class="container">
+          <div class="svgBox">
             ${props.icon}
           </div>
           <div>
@@ -21,18 +21,17 @@
         </div>
       </div>`;
     },
-    oneLineButton: function (props: SnackBarProps) {
-      return `<div className="snackbar">
-        <div className="container">
-          <div className="textBox">
+    'oneLineButton': function (props: SnackBarProps) {
+      return `<div class="snackbar">
+        <div class="container">
+          <div class="textBox">
             <p>
              ${props.message}
             </p>
           </div>
           <div>
             <Button
-              onClick={() => ${props.action()}}
-            >
+            on:click=${props.action}}>
               ${props.actionText}
             </Button>
           </div>
@@ -40,16 +39,16 @@
       </div>`;
     },
     twoLineButton: function (props: SnackBarProps) {
-      return `<div className="snackbar">
-        <div className="container">
-          <div className="textBox">
+      return `<div class="snackbar">
+        <div class="container">
+          <div class="textBox">
             <p>
              ${props.message}
             </p>
           </div>
           <div>
             <Button
-              onClick={() => ${props.action()}}
+           on:click=${props.action}
             >
               ${props.actionText}
             </Button>
@@ -60,5 +59,4 @@
   };
 
   export type layoutType = keyof typeof Layouts;
-
 </script>

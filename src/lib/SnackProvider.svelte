@@ -1,6 +1,5 @@
 <script lang="ts">
   import { getContext } from "svelte";
-  import type { SnackBarProps } from "./Types.svelte";
   import { Layouts } from "./Layouts.svelte";
   let isOpen: any = getContext("isOpen");
   let snackBarArray: any = getContext("snackBarArray");

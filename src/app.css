@@ -97,11 +97,10 @@ button:focus-visible {
     letter-spacing: -0.15px;
     color: #fefefe;
   }
-  .snackContainer .svg {
+  .svgStyle {
     fill: #fff;
     width: 15px;
     height: 15px;
-    viewbox: 0 0 15 15;
   }
   .snackContainer .svgBox {
     margin-right: 1px;

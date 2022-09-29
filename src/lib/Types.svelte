@@ -6,7 +6,7 @@
   export type SnackBarProps = {
     layout: layoutType;
     message: string;
-    icon?: Element;
+    icon?: any;
     actionText?: string;
     action?: Function;
     snackPosition?: positionType;

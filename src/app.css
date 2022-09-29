@@ -148,4 +148,5 @@ button:focus-visible {
   .snackContainer p {
     line-height: 22px;
     text-align: justify;
+    margin:0px;
   }

@@ -10,9 +10,9 @@
     },
     oneLineIcon: (props: SnackBarProps) => {
       return (
-        '<div class="snackbar"><div class="container"><div class="svgBox"><img src='+
+        '<div class="snackbar"><div class="container"><img src='+
           props.icon +
-           ' height="16px" width="16px"></div><div><p>'+props.message+'</p></div></div></div>'
+           ' height="16px" width="16px"><p>'+props.message+'</p></div></div></div></div>'
 
       );
     },

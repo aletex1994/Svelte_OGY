@@ -68,4 +68,11 @@ export const SnackContainerBottomRight =`
 
 export type positionType = keyof typeof Positions;
 
+export const Position = {
+  "top-right": SnackContainerTopRight,
+  "top-left": SnackContainerTopLeft,
+  "bottom-right": SnackContainerBottomRight,
+  "bottom-left": SnackContainerBottomLeft,
+};
+
 </script>

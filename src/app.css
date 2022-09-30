@@ -84,7 +84,7 @@ button:focus-visible {
     margin-top: 24px;
     width: fit-content;
     max-width: 404px;
-    padding: 12px 16px 16px 12px;
+    padding: 12px 16px 12px 16px;
     background-color: #151515;
     box-shadow: 0px 1px 12px rgba(18, 18, 18, 0.04),
       0px 0px 4px rgba(18, 18, 18, 0.08);
@@ -114,7 +114,7 @@ button:focus-visible {
     text-align: justify;
   }
 
-  .snackContainer .button {
+  .snackContainer button {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -127,9 +127,14 @@ button:focus-visible {
     color: #fefefe;
     padding: 0px;
     margin-left: 28px;
-    padding-top: 2px;
+    background-color:#151515;
+    padding-top:1px;
   }
-  .snackContainer .button:hover {
+  button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .snackContainer button:hover {
     background-color: #151515;
   }
   .snackContainer .button-right {
@@ -149,4 +154,10 @@ button:focus-visible {
     line-height: 22px;
     text-align: justify;
     margin:0px;
+  }
+  .snackContainer img{
+    height:16px;
+    width:16px;
+    margin-right:9px;
+    padding-top:2px;
   }

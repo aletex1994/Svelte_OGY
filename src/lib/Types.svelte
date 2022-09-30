@@ -1,5 +1,6 @@
 <script lang="ts" context="module">
-  import type { layoutType } from "./Layouts.svelte";
+  import type { Writable } from "svelte/store";
+  import type { layoutType } from "./Layout.svelte";
   import type { positionType } from "./Positions.svelte";
 
   // Type for Snack
@@ -7,14 +8,14 @@
     layout: layoutType;
     message: string;
     icon?: any;
-    actionText?: string;
+    actionText?: any;
     action?: Function;
     snackPosition?: positionType;
   };
   // Type for Context
   export type ContextType = {
-    isOpen: boolean;
-    snackBarArray?: SnackBarProps[];
+    isOpen: Writable<boolean>;
+    snackBarArray?: Writable<SnackBarProps[]> | undefined;
     addSnackBar: (snackbar: SnackBarProps) => void;
     providerPosition: positionType;
   };

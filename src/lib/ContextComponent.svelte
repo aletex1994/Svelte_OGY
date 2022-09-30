@@ -6,6 +6,11 @@
     const userDetails2 = { username: 'Andreas@childComponent.com', islogin: 'yes' };
     setContext('user-details2', userDetails2 )
 
+    const alerttt = () => {
+        alert('alerttt')
+    };
+    setContext('alerttt', alerttt );
+
 </script>
 
 <div>

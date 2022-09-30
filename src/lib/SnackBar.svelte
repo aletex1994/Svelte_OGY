@@ -1,6 +1,8 @@
 <script lang="ts">
-
-export let message: string;
+  
+export let durationms : number;
+export let maxSnack : number;
+export let position : string;
 </script>
-<p>{message}</p>
+
 

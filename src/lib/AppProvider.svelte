@@ -2,5 +2,10 @@
   import SnackBar from './SnackBar.svelte'
 </script>
 <slot/>
-<SnackBar message="Hello World"/>
+
+<SnackBar 
+durationms={5000}
+maxSnack={3}
+position="top-right"
+/>
 

@@ -1,9 +1,11 @@
 <script lang="ts">
   import svelteLogo from './assets/svelte.svg'
   import AppProvider from './lib/AppProvider.svelte'
+  import SnackBarContext from './lib/SnackBarContext.svelte';
 </script>
 <AppProvider>
   <main>
+    <SnackBarContext durationms={2000} maxSnack={3} position={"top-right"}/>
     <div>
       <a href="https://vitejs.dev" target="_blank"> 
         <img src="/vite.svg" class="logo" alt="Vite Logo" />

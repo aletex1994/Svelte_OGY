@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SnackBar from './SnackBar.svelte'
+  import SnackBar from './SnackBarContext.svelte'
 </script>
 <slot/>
 
